@@ -17,7 +17,7 @@ if not TELEGRAM_TOKEN:
 client = OpenAI(api_key=OPENAI_KEY)
 
 redis_client = redis.from_url(
-    os.getenv("redis-13667.c13.us-east-1-3.ec2.cloud.redislabs.com:13667"),
+    os.getenv("REDIS_URL"),
     decode_responses=True
 )
 
