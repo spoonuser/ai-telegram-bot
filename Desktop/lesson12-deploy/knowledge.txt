@@ -1,0 +1,9 @@
+AutoFix Service provides car repair services.
+
+Oil change costs 7000 tenge.
+Diagnostics costs 5000 tenge.
+
+We repair Toyota, BMW, Mercedes.
+
+Location: Almaty
+Working hours: 9:00 - 18:00

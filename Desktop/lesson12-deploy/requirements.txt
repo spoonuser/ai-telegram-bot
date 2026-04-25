@@ -1,0 +1,4 @@
+openai
+python-telegram-bot==20.7
+redis
+numpy
