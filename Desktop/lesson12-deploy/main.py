@@ -16,7 +16,10 @@ if not TELEGRAM_TOKEN:
 
 client = OpenAI(api_key=OPENAI_KEY)
 
-redis_client = redis.Redis(host='localhost', port=6379, decode_responses=True)
+redis_client = redis.from_url(
+    os.getenv("redis-13667.c13.us-east-1-3.ec2.cloud.redislabs.com:13667"),
+    decode_responses=True
+)
 
 def get_user_messages(user_id):
     data = redis_client.get(str(user_id))
